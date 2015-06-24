@@ -1,0 +1,21 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <div id="map-canvas" style="height:400px; width:100%;"></div>
+    <div class="list">
+
+
+    <a class="item item-thumbnail-left" href="#"  ng-repeat="place in locations">
+      <img ng-src="{{place.icon}}" class="rest-icon" />
+      <h2>{{place.name}}</h2>
+      <p>{{place.opening_hours.open_now}}</p>
+      <p>{{place.vicinity}}</p>
+      <p>{{place.rating}}</p>
+      <!-- <div ng-repeat="type in place.types" class="types">{{type}}</div> -->
+    </a>
+
+    ...
+
+</div>
+
+  </ion-content>
+</ion-view>
